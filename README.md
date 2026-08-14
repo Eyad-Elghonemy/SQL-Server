@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="logo.png" alt="Database 1 Logo" width="120" />
+<img src="logo.svg" alt="Database 1 Logo" width="120" />
 
 # Database 1 — SQL Server Coursework
 
