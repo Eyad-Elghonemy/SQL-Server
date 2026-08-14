@@ -1,6 +1,18 @@
+<div align="center">
+
+<img src="logo.png" alt="Database 1 Logo" width="120" />
+
 # Database 1 — SQL Server Coursework
 
-Personal notes, in-class practice, and assignments for the **Database 1** course (SQL Server / T-SQL).
+**Personal notes, in-class practice, and assignments for the Database 1 course (SQL Server / T-SQL).**
+
+[![SQL Server](https://img.shields.io/badge/SQL_Server-T--SQL-CC2927?logo=microsoftsqlserver&logoColor=white)](https://learn.microsoft.com/en-us/sql/t-sql/)
+[![Database Design](https://img.shields.io/badge/Topic-Database_Design-4479A1?logo=databricks&logoColor=white)](#)
+[![Status](https://img.shields.io/badge/Status-Actively_Updated-2E7D32)](#)
+
+</div>
+
+---
 
 ## 📁 Structure
 
