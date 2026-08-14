@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <!-- Dark App Icon Background -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B132B" />
+      <stop offset="100%" stop-color="#010714" />
+    </linearGradient>
+
+    <!-- Database Cylinder Body Gradient (Glassmorphic) -->
+    <linearGradient id="db-body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1C4B82" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#0A1F3D" stop-opacity="0.8" />
+    </linearGradient>
+
+    <!-- Database Cylinder Top Gradient -->
+    <linearGradient id="db-top" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2164A8" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#123B68" stop-opacity="0.9" />
+    </linearGradient>
+
+    <!-- Relational Line Gradient (Joins/Foreign Keys) -->
+    <linearGradient id="relation-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F43F5E" />
+      <stop offset="100%" stop-color="#9333EA" />
+    </linearGradient>
+  </defs>
+
+  <!-- Square Canvas with rounded corners -->
+  <rect width="1024" height="1024" fill="url(#bg-grad)" rx="225" />
+
+  <!-- Database Isometric Stack -->
+  <g stroke="#38BDF8" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    
+    <!-- BOTTOM LAYER (Data Storage) -->
+    <!-- sweep-flag 0 is used to draw the bottom half of the cylinder body -->
+    <path d="M 292 700 L 292 780 A 220 80 0 0 0 732 780 L 732 700 Z" fill="url(#db-body)" />
+    <ellipse cx="512" cy="700" rx="220" ry="80" fill="url(#db-top)" />
+
+    <!-- MIDDLE LAYER (Schemas & Tables) -->
+    <path d="M 292 530 L 292 610 A 220 80 0 0 0 732 610 L 732 530 Z" fill="url(#db-body)" />
+    <ellipse cx="512" cy="530" rx="220" ry="80" fill="url(#db-top)" />
+
+    <!-- TOP LAYER (Views & Queries) -->
+    <path d="M 292 360 L 292 440 A 220 80 0 0 0 732 440 L 732 360 Z" fill="url(#db-body)" />
+    <ellipse cx="512" cy="360" rx="220" ry="80" fill="url(#db-top)" />
+    
+  </g>
+
+  <!-- ER Diagram / Relational Schema Overlay -->
+  <!-- Connection Line crossing the tables -->
+  <path d="M 380 390 L 380 470 L 640 560 L 640 640 L 512 730" 
+        fill="none" 
+        stroke="url(#relation-grad)" 
+        stroke-width="16" 
+        stroke-linejoin="miter" />
+
+  <!-- Relational Nodes (Foreign Keys) -->
+  <g fill="#010714" stroke="url(#relation-grad)" stroke-width="12">
+    <!-- Top Node -->
+    <circle cx="380" cy="390" r="24" />
+    <!-- Middle Node -->
+    <circle cx="640" cy="560" r="24" />
+    <!-- Bottom Node -->
+    <circle cx="512" cy="730" r="24" />
+  </g>
+
+  <!-- Solid Inner Dots for Nodes -->
+  <g fill="#F43F5E">
+    <circle cx="380" cy="390" r="8" />
+    <circle cx="640" cy="560" r="8" />
+    <circle cx="512" cy="730" r="8" />
+  </g>
+</svg>
